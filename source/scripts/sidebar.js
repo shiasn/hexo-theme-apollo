@@ -18,7 +18,7 @@
     container.append(button)
   }
   function addSidebar () {
-    if (document.querySelector('.post-list-item').length) return
+    if (document.querySelector('.post-list-item')) return
     var container = document.createElement('aside')
     var eles = []
 
