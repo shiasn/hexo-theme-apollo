@@ -18,11 +18,10 @@
     container.append(button)
   }
   function addSidebar () {
-    var postBlock = document.querySelector('.post-block')
-    if (!postBlock) return
+    if (document.querySelector('.post-list-item')) return
     var container = document.createElement('aside')
     var eles = []
-    
+
     addToggleButton(container)
     container.className = 'sidebar closed'
   
