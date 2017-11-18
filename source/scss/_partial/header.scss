@@ -1,13 +1,9 @@
 header {
     min-height: 60px;
-
-    .logo-link {
-        float: left;
-    }
+    text-align: center;
     
     .nav {
-        float: right;
-        left: 80px;
+        display: inline-block;
     }
 
     .logo-link img {

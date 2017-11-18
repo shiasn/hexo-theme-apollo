@@ -1,0 +1,94 @@
+.sidebar {
+  box-sizing: border-box;
+  overflow: scroll;
+  position: fixed;
+  top: 0;
+  padding: 10px;
+  padding-top: 70px;
+  width: 250px;
+  height: 100%;
+  background: rgb(66, 185, 131);
+  color: #f4f7f7;
+  box-shadow: 0 0px 50px #79bd9a;
+  transition: right .2s;
+}
+.sidebar p {
+  padding: 0;
+  margin: 15px 0;
+  white-space:nowrap;
+}
+.sidebar > div:first-child {
+  position: fixed;
+  top: 20px;
+  right: 100px;
+  width: 50px;
+  height: 50px;
+  background: rgb(66, 185, 131);
+  opacity: .3;
+  border-radius: 50%;
+  box-shadow: 0 6px 20px #79bd9a;
+  transition: all .3s;
+}
+
+.sidebar > div:first-child span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 25px;
+  height: 2px;
+  transform: translate(-50%, -50%);
+  background: #F8FAFF;
+  transition: all .3s;
+}
+
+.sidebar > div:first-child span:first-child {
+  top: 35%;
+}
+.sidebar > div:first-child span:last-child {
+  top: 65%;
+}
+
+.sidebar > div:first-child:hover {
+  opacity: 1;
+}
+.sidebar > div:first-child:hover span:first-child{
+  top: 30%;
+}
+.sidebar > div:first-child:hover span:last-child{
+  top: 70%;
+}
+
+.sidebar .header-2 {text-indent: 10px}
+.sidebar .header-3 {text-indent: 20px}
+.sidebar .header-4 {text-indent: 30px}
+.sidebar .header-5 {text-indent: 40px}
+.sidebar .header-6 {text-indent: 50px}
+
+.sidebar.closed {
+  right: -300px;
+}
+
+.sidebar.opened {
+  right: 0;
+}
+.sidebar.opened > div:first-child span:first-child {
+  transform: rotate(45deg);
+  left: 25%;
+  top: 50%;
+}
+.sidebar.opened > div:first-child span:nth-child(2) {
+  opacity: 0;
+}
+.sidebar.opened > div:first-child span:last-child {
+  transform: rotate(-45deg);
+  top: 50%;
+  left: 25%;
+}
+.sidebar.mobile > div:first-child {
+  top: auto;
+  bottom: 20px
+}
+.sidebar.mobile {
+  padding-top: 10px;
+  padding-bottom: 70px
+}
