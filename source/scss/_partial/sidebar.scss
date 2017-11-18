@@ -7,14 +7,15 @@
   padding-top: 70px;
   width: 250px;
   height: 100%;
-  background: rgb(66, 185, 131);
-  color: #f4f7f7;
-  box-shadow: 0 0px 50px #79bd9a;
+  background: #1e2022;
+  color: #f0f5f9;
+  box-shadow: 0 0px 50px #1e2022;
   transition: right .2s;
 }
 .sidebar p {
   padding: 0;
   margin: 15px 0;
+  cursor: pointer;
   white-space:nowrap;
 }
 .sidebar > div:first-child {
@@ -23,10 +24,10 @@
   right: 100px;
   width: 50px;
   height: 50px;
-  background: rgb(66, 185, 131);
+  background: #1e2022;
   opacity: .3;
   border-radius: 50%;
-  box-shadow: 0 6px 20px #79bd9a;
+  box-shadow: 0 6px 20px #1e2022;
   transition: all .3s;
 }
 
@@ -37,7 +38,7 @@
   width: 25px;
   height: 2px;
   transform: translate(-50%, -50%);
-  background: #F8FAFF;
+  background: #f0f5f9;
   transition: all .3s;
 }
 
