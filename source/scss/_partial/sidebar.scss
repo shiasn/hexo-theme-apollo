@@ -42,6 +42,10 @@
   transition: all .3s;
 }
 
+.sidebar > p:nth-child(2) {
+  display: none;
+}
+
 .sidebar > div:first-child span:first-child {
   top: 35%;
 }
